@@ -1,0 +1,16 @@
+create_books_table ="""
+CREATE TABLE IF NOT EXISTS books (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+book_id INTEGER NOT NULL,
+name VARCHAR(20) NOT NULL,
+author VARCHAR(20) NOT NULL
+)
+"""
+create_books_details_table ="""
+CREATE TABLE IF NOT EXISTS books_details (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+book_id INTEGER NOT NULL,
+janr TEXT NOT NULL
+)
+"""
+
